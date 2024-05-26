@@ -1,11 +1,12 @@
+import { Button } from "@/components/ui/button";
 import { PropsWithChildren } from "react";
 import { Section } from "./Section";
 import { CustomIcon } from "./icons/CustomIcons";
 
 export const Hero = () => {
   return (
-    <Section clasName="flex flex-col gap-2">
-      <h1 className="text-4xl font-bold">Hey, I am Esteban 👋🏼</h1>
+    <Section clasName="flex flex-col gap-2 lg:gap-4">
+      <h1 className="text-4xl lg:text-5xl font-bold">Hey, I am Esteban 👋🏼</h1>
       <p className="text-lg leading-9">
         I help{" "}
         <Code>
@@ -22,6 +23,20 @@ export const Hero = () => {
           video editing.
         </Code>
       </p>
+      <div className="mt-4 lg:mt-6 flex items-center flex-wrap gap-4">
+        <Button size="lg" className="w-fit ">
+          Schedule a call
+        </Button>
+        <Button size="lg" variant="ghost" className="w-fit">
+          {" "}
+          <CustomIcon
+            className="mr-2 text-foreground"
+            name="linkedin"
+            size={20}
+          />
+          @babanlpz
+        </Button>
+      </div>
     </Section>
   );
 };
