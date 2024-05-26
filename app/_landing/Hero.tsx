@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { PropsWithChildren } from "react";
 import { Section } from "./Section";
+import { Work } from "./Work";
 import { CustomIcon } from "./icons/CustomIcons";
 
 export const Hero = () => {
@@ -37,6 +38,7 @@ export const Hero = () => {
           @babanlpz
         </Button>
       </div>
+      <Work />
     </Section>
   );
 };
