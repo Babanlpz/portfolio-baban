@@ -45,13 +45,13 @@ export const Work = () => {
     <Section>
       <h2 className="text-3xl lg:text-4xl font-bold pb-4">My best work</h2>
       <section className="mt-12 mx-auto px-4 max-w-screen-xl md:px-8">
-        <div className="text-center">
+        {/* <div className="text-center">
           <h1 className="text-3xl text-gray-800 font-semibold">Blog</h1>
           <p className="mt-3 text-gray-500">
             Blogs that are loved by the community. Updated every hour.
           </p>
-        </div>
-        <div className="mt-12 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+        </div> */}
+        <div className="mt-12 grid gap-2 sm:grid-cols-2 lg:grid-cols-2">
           {posts.map((items, key) => (
             <article
               className="max-w-md mx-auto mt-4 shadow-lg border rounded-md duration-300 hover:shadow-sm"
