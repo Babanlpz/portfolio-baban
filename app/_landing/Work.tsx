@@ -44,6 +44,9 @@ export const Work = () => {
   return (
     <Section>
       <h2 className="text-3xl lg:text-4xl font-bold pb-4">My best work</h2>
+      <p className="text-lg text-muted-foreground mt-2 lg:mt-4">
+        This video make thousands of view and grow the channel of my clients
+      </p>
       <section className="mt-12 mx-auto px-4 max-w-screen-xl md:px-8">
         {/* <div className="text-center">
           <h1 className="text-3xl text-gray-800 font-semibold">Blog</h1>
@@ -77,17 +80,13 @@ export const Work = () => {
                     />
                   </div>
                   <div className="ml-3">
-                    <span className="block text-gray-900">
-                      {items.authorName}
-                    </span>
-                    <span className="block text-gray-400 text-sm">
-                      {items.date}
-                    </span>
+                    <span className="block900">{items.authorName}</span>
+                    <span className="blocktext-sm">{items.date}</span>
                   </div>
                 </div>
                 <div className="pt-3 ml-4 mr-2 mb-3">
-                  <h3 className="text-xl text-gray-900">{items.title}</h3>
-                  <p className="text-gray-400 text-sm mt-1">{items.desc}</p>
+                  <h3 className="text-xl">{items.title}</h3>
+                  <p className=" text-sm mt-1">{items.desc}</p>
                 </div>
               </a>
             </article>
