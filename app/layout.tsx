@@ -17,7 +17,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(inter.className, "h-full")}>{children}</body>
+      <body
+        className={cn(
+          inter.className,
+          "font-sans h-full bg-background text-foreground"
+        )}
+      >
+        {children}
+      </body>
     </html>
   );
 }
